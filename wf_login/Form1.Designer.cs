@@ -92,6 +92,7 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(284, 30);
             this.txtPass.TabIndex = 1;
+            this.txtPass.UseSystemPasswordChar = true;
             // 
             // checkShowPass
             // 

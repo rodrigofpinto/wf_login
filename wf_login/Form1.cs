@@ -105,8 +105,15 @@ namespace wf_login
 
         private void checkShowPass_CheckedChanged(object sender, EventArgs e)
         {
-            
-            txtPass.PasswordChar=checkShowPass.Checked?'\0' : '*';
+
+            if (checkShowPass.Checked == true)
+            {
+                txtPass.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPass.UseSystemPasswordChar = true;
+            }
         }
     }
 }
