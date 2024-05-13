@@ -39,11 +39,11 @@ namespace wf_login
                         Form2 f2 = new Form2();
                         f2.Show();
                         this.Hide();
-                        MessageBox.Show("Login com sucesso", "Info");
+                        MessageBox.Show("Login successful", "Info");
                     }
                     else
                     {
-                        MessageBox.Show("Error login", "Erro");
+                        MessageBox.Show("Login error", "Error");
                     }
                 }
             }
@@ -53,15 +53,17 @@ namespace wf_login
         {
             if (txtUser.Text.Length < 4)
             {
-                MessageBox.Show("O nome de usuário deve ter pelo menos 4 caracteres.", "Erro de Registro");
+                MessageBox.Show("Username must be at least 4 characters long.", "Registration Error");
                 return;
             }
 
             if (txtPass.Text.Length < 8)
             {
-                MessageBox.Show("A senha deve ter pelo menos 8 caracteres.", "Erro de Registro");
+                MessageBox.Show("Password must be at least 8 characters long.", "Registration Error");
                 return;
             }
+
+
 
             string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\pinto\\Documents\\wf_login\\wf_login\\Database1.mdf;Integrated Security=True";
             string checkQuery = "SELECT COUNT(*) FROM dados WHERE username=@username";
@@ -79,7 +81,7 @@ namespace wf_login
 
                     if (userExists > 0)
                     {
-                        MessageBox.Show("Este nome de usuário já está sendo usado.", "Erro de Registro");
+                        MessageBox.Show("This username is already in use.", "Registration Error");
                         return;
                     }
                 }
@@ -93,11 +95,11 @@ namespace wf_login
 
                     if (result > 0)
                     {
-                        MessageBox.Show("Registro realizado com sucesso!", "Registro Concluído");
+                        MessageBox.Show("Record added successfully!", "Registration Completed");
                     }
                     else
                     {
-                        MessageBox.Show("Erro ao registrar usuário.", "Erro de Registro");
+                        MessageBox.Show("Error registering user.", "Registration Error");
                     }
                 }
             }
