@@ -249,10 +249,18 @@
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="fundo.png" />
+    <Content Include="icon-close.png" />
+    <Content Include="icon-maximize.png" />
+    <Content Include="icon-minimize.png" />
     <Content Include="raio.png" />
     <None Include="Resources\raio.png" />
     <None Include="Resources\senha_icon.png" />
     <None Include="Resources\user_icon.png" />
+    <None Include="Resources\fundo.png" />
+    <None Include="Resources\icons8-close-64.png" />
+    <None Include="Resources\icon-close.png" />
+    <None Include="Resources\icon-maximize.png" />
+    <None Include="Resources\icon-minimize.png" />
     <Content Include="senha_icon.png" />
     <Content Include="user_icon.png" />
   </ItemGroup>
