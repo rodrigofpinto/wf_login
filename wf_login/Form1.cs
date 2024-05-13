@@ -63,8 +63,6 @@ namespace wf_login
                 return;
             }
 
-
-
             string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\pinto\\Documents\\wf_login\\wf_login\\Database1.mdf;Integrated Security=True";
             string checkQuery = "SELECT COUNT(*) FROM dados WHERE username=@username";
             string insertQuery = "INSERT INTO dados (username, password) VALUES (@username, @password)";
