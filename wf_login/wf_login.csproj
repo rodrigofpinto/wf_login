@@ -249,6 +249,8 @@
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="fundo.png" />
+    <Content Include="raio.png" />
+    <None Include="Resources\raio.png" />
     <None Include="Resources\senha_icon.png" />
     <None Include="Resources\user_icon.png" />
     <Content Include="senha_icon.png" />
